@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # образ W25Q32.ROM для записи в конфигурационную флешку W25Q32 с помощью программатора
-dd if=/dev/zero of=W25Q32.ROM bs=720896 count=1
+dd if=/dev/zero of=W25Q32.ROM bs=393216 count=1
 cat gs105a.rom >> W25Q32.ROM
 cat hegluk_19.rom >> W25Q32.ROM 
 cat trdos_605e.rom >> W25Q32.ROM 
