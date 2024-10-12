@@ -4,8 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6) Path("reports/") File("speccy_wxeda.jic") MfrSpec(OpMask(1) SEC_Device(EPCS4) Child_OpMask(1 1));
-
+		Device PartName(EP4CE6) Path("/home/msx/altera/13.0sp1/quartus/common/devinfo/programmer/") File("sfl_ep4ce6.sof") MfrSpec(OpMask(1) SEC_Device(EPCS4) Child_OpMask(1 1) SFLPath("reports/speccy_wxeda.jic"));
 
 ChainEnd;
 

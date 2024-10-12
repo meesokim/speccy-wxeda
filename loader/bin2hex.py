@@ -166,7 +166,8 @@ def generatehexfile(inputlist, hexsubsettype=4):
                     bytestoread = recordlength
 
                 bindata = f.read(bytestoread)
-                bindata = struct.unpack('B'*len(bindata),bindata) # better to use ord actually
+                # bindata = struct.unpack('B'*len(bindata),bindata) # better to use ord actually
+                bindata = [x for x in bindata]
                 # bindata = map(ord, bindata)
                 hexout.append(HexRecord(HEX_TYPE_DATA, bindata, address=curraddr).getRecord())
                 curraddr += len(bindata)
